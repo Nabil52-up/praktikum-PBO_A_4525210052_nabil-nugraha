@@ -9,7 +9,7 @@ public enum TipeBahanBakar {
     //         BENSIN  -> "Bensin",  12000
     //         SOLAR   -> "Solar",   10500
     //         LISTRIK -> "Listrik",  2500   (per kWh)
-    BENSIN("Bensin", 1200),
+    BENSIN("Bensin", 12000),
     SOLAR("Solar", 10500),
     LISTRIK("listrik", 2500);
     // TODO 2 (Langkah 2): tambahkan LISTRIK.
