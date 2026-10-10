@@ -9,9 +9,12 @@ class RekeningBank
 {
     // TODO 1: ganti angka ajaib berikut menjadi konstanta bernama.
     //   bunga tahunan 0.025 · biaya admin 5000 · batas penarikan 5000000
+    private const Bunga_tahunan = 0.025;
+    private const administrasi = 5000;
+    private const Batas_Penarikan = 5000000;
 
     // TODO 2: deklarasikan properti statis penghitung jumlah rekening.
-
+    private static int $jumlahRekening = 0 ;
     private float $saldo;
 
     /**
@@ -24,7 +27,15 @@ class RekeningBank
         private readonly string $pemilik,
         float $saldoAwal = 0,
     ) {
+        if (empty($nomor)){
+            throw new InvalidArgumentException("Nomor rekening tidak boleh kosong");
+        }
+        if($saldoAwal <0){
+            throw new InvalidArgumentException("Saldo awal tidak boleh kosong");
+            
+        }
         $this->saldo = $saldoAwal;
+        self::$jumlahRekening++;
     }
 
     /**
@@ -32,36 +43,51 @@ class RekeningBank
      *         Gunakan `new static()`, BUKAN `new self()`.
      *         Alasannya ada di modul teori pertemuan 3 (LateBinding.php).
      */
-    public static function rekeningPelajar(string $nomor, string $pemilik): static
+    public static function rekeningPelajar(string $nomor, string $pemilik):static 
     {
-        throw new RuntimeException('TODO 5 belum dikerjakan');
+        return new static ($nomor, $pemilik, 0);
     }
-
     public function setor(float $jumlah): void
     {
         // TODO 6
+        if ($jumlah <=0 ){
+            throw new InvalidArgumentException("Jumlah setoran tidak boleh negatif ");
+        }
+        $this->saldo += $jumlah;
     }
 
     public function tarik(float $jumlah): void
     {
         // TODO 7: tolak <= 0, tolak melebihi saldo, tolak melebihi batas sekali tarik.
+        if ($jumlah <= 0){
+            throw new InvalidArgumentException("Jumlah tarik harus lebih besar dari @");
+        }
+        if ($jumlah > $this->saldo) {
+        throw new InvalidArgumentException("Jumlah tarik melebihi saldo");
+        }
+        if ($jumlah > self :: Batas_Penarikan){
+            throw new InvalidArgumentException("Jumlah tarik melebihi batas penarikan");
+        }
+        $this->saldo -= $jumlah;
+
     }
 
     /** TODO 8 */
     public function potongBiayaAdmin(): void
     {
+        $this->saldo -=self::administrasi;
     }
 
     /** TODO 9 */
     public static function getJumlahRekening(): int
     {
-        return -1;   // ganti
+        return self::$jumlahRekening;   // ganti
     }
 
     /** TODO 10 */
     public static function bungaSetahun(float $pokok): float
     {
-        return 0;   // ganti
+        return $pokok * self::Bunga_tahunan;   // ganti
     }
 
     public function getSaldo(): float { return $this->saldo; }

@@ -7,18 +7,19 @@ declare(strict_types=1);
  */
 class Mahasiswa
 {
-    public const float BOBOT_TUGAS = 0.30;
-    public const float BOBOT_UTS   = 0.30;
-    public const float BOBOT_UAS   = 0.40;
+   public const BOBOT_TUGAS = 0.30;
+public const BOBOT_UTS   = 0.30;
+public const BOBOT_UAS   = 0.40;
 
-    private const float NILAI_MIN = 0;
-    private const float NILAI_MAX = 100;
+private const NILAI_MIN = 0;
+private const NILAI_MAX = 100;
 
     /**
      * Constructor property promotion (PHP 8):
      * readonly adalah padanan `final` pada atribut Java.
      *
-     * TODO 1: lengkapi daftar parameter — tentukan mana yang readonly.
+     * nim dan nama readonly (tidak boleh berubah setelah terdaftar).
+     * nilaiTugas, nilaiUts, nilaiUas boleh berubah -> bukan readonly.
      */
     public function __construct(
         private readonly string $nim,
@@ -27,34 +28,58 @@ class Mahasiswa
         private float $nilaiUts,
         private float $nilaiUas,
     ) {
-        // TODO 2: tolak NIM yang kosong (setelah di-trim).
-        //         Lemparkan InvalidArgumentException dengan pesan yang jelas.
+        // Tolak NIM yang kosong (setelah di-trim).
+        if (trim($this->nim) === '') {
+            throw new InvalidArgumentException('NIM tidak boleh kosong atau hanya spasi');
+        }
 
-        // TODO 3: tolak setiap komponen nilai di luar rentang 0-100
-        //         menggunakan method pembantu di bawah.
+        // Tolak setiap komponen nilai di luar rentang 0-100.
+        self::pastikanNilaiSah('tugas', $this->nilaiTugas);
+        self::pastikanNilaiSah('UTS', $this->nilaiUts);
+        self::pastikanNilaiSah('UAS', $this->nilaiUas);
     }
 
     /**
-     * TODO 4: lengkapi validasi satu komponen nilai.
+     * Validasi satu komponen nilai berada dalam rentang 0-100.
      */
     private static function pastikanNilaiSah(string $namaKomponen, float $nilai): void
     {
-        // TODO
+        if ($nilai < self::NILAI_MIN || $nilai > self::NILAI_MAX) {
+            throw new InvalidArgumentException(
+                sprintf(
+                    'Nilai %s harus di rentang %s-%s, diberikan: %s',
+                    $namaKomponen,
+                    self::NILAI_MIN,
+                    self::NILAI_MAX,
+                    $nilai
+                )
+            );
+        }
     }
 
-    /** TODO 5: hitung nilai akhir memakai konstanta bobot. */
+    /** Hitung nilai akhir memakai konstanta bobot. */
     public function nilaiAkhir(): float
     {
-        return 0;   // ganti
+        return ($this->nilaiTugas * self::BOBOT_TUGAS)
+            + ($this->nilaiUts * self::BOBOT_UTS)
+            + ($this->nilaiUas * self::BOBOT_UAS);
     }
 
-    /** TODO 6: kembalikan huruf mutu. Petunjuk: match (true) { ... } */
+    /** Kembalikan huruf mutu. */
     public function hurufMutu(): string
     {
-        return '?';   // ganti
+        $akhir = $this->nilaiAkhir();
+
+        return match (true) {
+            $akhir >= 80 => 'A',
+            $akhir >= 70 => 'B',
+            $akhir >= 60 => 'C',
+            $akhir >= 50 => 'D',
+            default      => 'E',
+        };
     }
 
-    // TODO 7: sediakan getter seperlunya. JANGAN membuat setNim().
+    // Getter seperlunya. Tidak ada setNim() agar NIM tetap immutable.
     public function getNim(): string  { return $this->nim; }
     public function getNama(): string { return $this->nama; }
 
