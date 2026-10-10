@@ -22,10 +22,12 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before RekeningBank.java](images/pertemuan3-java-before.png)
+![Before RekeningBank.java](<img width="1175" height="931" alt="rekeningbank java" src="https://github.com/user-attachments/assets/3553d660-c99d-4b7a-a2ca-d9085b9ad87f" />
+)
 
 - **After**:
-![After RekeningBank.java](images/pertemuan3-java-after.png)
+![After RekeningBank.java](<img width="1410" height="920" alt="Screenshot 2026-10-10 220835" src="https://github.com/user-attachments/assets/e702649e-fb38-41cb-90b0-8a93c0c32cda" />
+)
 
 ### 1.2. File: `Main.java`
 
@@ -36,14 +38,17 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before Main.java](images/pertemuan3-main-java-before.png)
+![Before Main.java](<img width="1062" height="744" alt="main java" src="https://github.com/user-attachments/assets/38238e51-7bd7-47bc-97aa-3cf71d886ea7" />
+)
 
 - **After**:
-![After Main.java](images/pertemuan3-main-java-after.png)
+![After Main.java](<img width="1062" height="744" alt="main java" src="https://github.com/user-attachments/assets/46366022-dc43-44dd-946e-ddef6843510f" />
+)
 
 ### Output Java
 
-![Output Java](images/pertemuan3-output-java.png)
+![Output Java](<img width="1009" height="238" alt="Screenshot 2026-10-10 221157" src="https://github.com/user-attachments/assets/5b82cfbe-1e43-411c-8d98-e2c803fe5b98" />
+)
 
 ---
 
@@ -58,10 +63,12 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before RekeningBank.php](images/pertemuan3-php-before.png)
+![Before RekeningBank.php](<img width="885" height="933" alt="rekeningbank php" src="https://github.com/user-attachments/assets/dce87beb-88fd-44f1-aaa0-cf6fbb9b93a5" />
+)
 
 - **After**:
-![After RekeningBank.php](images/pertemuan3-php-after.png)
+![After RekeningBank.php](<img width="1244" height="870" alt="Screenshot 2026-10-10 221553" src="https://github.com/user-attachments/assets/f362e3c4-f0c3-40b2-b44e-64301fb5a023" />
+)
 
 ### 2.2. File: `main.php`
 
@@ -72,14 +79,17 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before main.php](images/pertemuan3-main-php-before.png)
+![Before main.php](<img width="722" height="470" alt="Screenshot 2026-10-10 221640" src="https://github.com/user-attachments/assets/49d6e412-338d-4743-8da0-b5bf58368057" />
+)
 
 - **After**:
-![After main.php](images/pertemuan3-main-php-after.png)
+![After main.php](<img width="753" height="464" alt="Screenshot 2026-10-10 221706" src="https://github.com/user-attachments/assets/329c4bf5-f31e-467a-b0c2-17550f2c2e5a" />
+)
 
 ### Output PHP
 
-![Output PHP](images/pertemuan3-output-php.png)
+![Output PHP](<img width="779" height="210" alt="Screenshot 2026-10-10 222208" src="https://github.com/user-attachments/assets/e405185a-764c-4c2d-8f5d-a88945988d6f" />
+)
 
 ---
 
