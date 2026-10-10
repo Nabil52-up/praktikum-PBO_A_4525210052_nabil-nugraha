@@ -22,12 +22,12 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before** (Kondisi awal):
-![<img width="1073" height="898" alt="Before Mahasiswa java" src="https://github.com/user-attachments/assets/dd71aa64-2ed2-480d-bab4-a544a39468d7" />
-](<img width="1073" height="898" alt="Before Mahasiswa java" src="https://github.com/user-attachments/assets/09fce221-a41f-4632-addd-995b1b6a463d" />
-)
+<img width="1073" height="898" alt="Before Mahasiswa java" src="https://github.com/user-attachments/assets/42ebe62f-5803-443e-b273-2193a28ccfe2" />
+
 
 - **After** (Kondisi akhir):
-![After Mahasiswa.java](images/pertemuan2-java-after.png)
+![After Mahasiswa.java] <img width="1121" height="920" alt="Screenshot 2026-10-10 225641" src="https://github.com/user-attachments/assets/6ed7850a-c341-4e42-bbc7-150a3c988417" />
+
 
 ### 1.2. File: `Main.java`
 
@@ -38,14 +38,14 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before Main.java](images/pertemuan2-main-java-before.png)
+![Before Main.java] <img width="777" height="554" alt="image" src="https://github.com/user-attachments/assets/558ffae0-fa0b-481e-a5e0-0859414e13c1" />
 
 - **After**:
-![After Main.java](images/pertemuan2-main-java-after.png)
+![After Main.java] <img width="1212" height="763" alt="image" src="https://github.com/user-attachments/assets/1197f204-4db5-4e2f-a35d-89242a41e012" />
 
 ### Output Java
 
-![Output Java](images/pertemuan2-output-java.png)
+![Output Java] <img width="606" height="175" alt="image" src="https://github.com/user-attachments/assets/fbf8afa1-a299-4792-98f9-9cb17cf5b007" />
 
 ---
 
@@ -60,10 +60,14 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before Mahasiswa.php](images/pertemuan2-php-before.png)
+![Before Mahasiswa.php] <img width="884" height="934" alt="image" src="https://github.com/user-attachments/assets/0e61e9b6-ef95-4b94-bf3e-6cb8c26a34f9" />
+
 
 - **After**:
-![After Mahasiswa.php](images/pertemuan2-php-after.png)
+![After Mahasiswa.php] <img width="930" height="911" alt="image" src="https://github.com/user-attachments/assets/65e79780-f8c1-4605-839f-708851909586" />
+<img width="1136" height="846" alt="image" src="https://github.com/user-attachments/assets/526ab7c1-bfc2-4e44-a01c-bee16cdf7206" />
+
+
 
 ### 2.2. File: `main.php`
 
@@ -74,14 +78,16 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before main.php](images/pertemuan2-main-php-before.png)
+![Before main.php] <img width="605" height="534" alt="image" src="https://github.com/user-attachments/assets/e3a3afaf-a074-4f9d-abc1-27b71f2c9383" />
+
 
 - **After**:
-![After main.php](images/pertemuan2-main-php-after.png)
+![After main.php] <img width="645" height="573" alt="image" src="https://github.com/user-attachments/assets/cd3a03c6-0477-4a3c-8b46-0140b6b45ca9" />
+
 
 ### Output PHP
 
-![Output PHP](images/pertemuan2-output-php.png)
+![Output PHP] <img width="871" height="183" alt="image" src="https://github.com/user-attachments/assets/bef84752-ff3a-4e08-8e85-fd615b372813" />
 
 ---
 
