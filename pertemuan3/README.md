@@ -22,12 +22,11 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before RekeningBank.java](<img width="1175" height="931" alt="rekeningbank java" src="https://github.com/user-attachments/assets/3553d660-c99d-4b7a-a2ca-d9085b9ad87f" />
-)
+![Before RekeningBank.java] <img width="1023" height="930" alt="image" src="https://github.com/user-attachments/assets/57c10b08-5ddf-4c2e-b91e-d0a679a5550e" />
 
 - **After**:
-![After RekeningBank.java](<img width="1410" height="920" alt="Screenshot 2026-10-10 220835" src="https://github.com/user-attachments/assets/e702649e-fb38-41cb-90b0-8a93c0c32cda" />
-)
+![After RekeningBank.java] <img width="967" height="911" alt="image" src="https://github.com/user-attachments/assets/00956ac1-2926-4976-a1db-e740cefd7097" />
+
 
 ### 1.2. File: `Main.java`
 
@@ -38,17 +37,14 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before Main.java](<img width="1062" height="744" alt="main java" src="https://github.com/user-attachments/assets/38238e51-7bd7-47bc-97aa-3cf71d886ea7" />
-)
+![Before Main.java] <img width="895" height="628" alt="image" src="https://github.com/user-attachments/assets/b787e21a-c7b9-4e95-aab7-85e8300b1808" />
 
 - **After**:
-![After Main.java](<img width="1062" height="744" alt="main java" src="https://github.com/user-attachments/assets/46366022-dc43-44dd-946e-ddef6843510f" />
-)
+![After Main.java] <img width="926" height="620" alt="image" src="https://github.com/user-attachments/assets/022216b7-ced9-4537-9e26-751d52312621" />
 
 ### Output Java
 
-![Output Java](<img width="1009" height="238" alt="Screenshot 2026-10-10 221157" src="https://github.com/user-attachments/assets/5b82cfbe-1e43-411c-8d98-e2c803fe5b98" />
-)
+![Output Java] <img width="1010" height="219" alt="image" src="https://github.com/user-attachments/assets/60136a22-01e1-41a6-aa91-2b879b712b20" />
 
 ---
 
@@ -63,12 +59,16 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before RekeningBank.php](<img width="885" height="933" alt="rekeningbank php" src="https://github.com/user-attachments/assets/dce87beb-88fd-44f1-aaa0-cf6fbb9b93a5" />
-)
+![Before RekeningBank.php] <img width="958" height="898" alt="image" src="https://github.com/user-attachments/assets/a956f09a-d5e3-4098-9858-04f7cef6f976" />
+<img width="674" height="556" alt="image" src="https://github.com/user-attachments/assets/f537fa20-0eb5-4753-97cd-4f2db531b9cc" />
+
+
 
 - **After**:
-![After RekeningBank.php](<img width="1244" height="870" alt="Screenshot 2026-10-10 221553" src="https://github.com/user-attachments/assets/f362e3c4-f0c3-40b2-b44e-64301fb5a023" />
-)
+![After RekeningBank.php] <img width="930" height="905" alt="image" src="https://github.com/user-attachments/assets/d6ff0906-4a5d-4245-baf0-90d7e1ad0cc9" />
+<img width="856" height="875" alt="image" src="https://github.com/user-attachments/assets/6d9a3caf-2d39-45fb-8ce4-c0de4a1a46c4" />
+
+
 
 ### 2.2. File: `main.php`
 
@@ -79,17 +79,15 @@
 **Bukti Eksekusi (Screenshot):**
 
 - **Before**:
-![Before main.php](<img width="722" height="470" alt="Screenshot 2026-10-10 221640" src="https://github.com/user-attachments/assets/49d6e412-338d-4743-8da0-b5bf58368057" />
-)
+![Before main.php] <img width="786" height="568" alt="image" src="https://github.com/user-attachments/assets/57ae6db7-1237-4ea9-913d-df888eeace71" />
 
 - **After**:
-![After main.php](<img width="753" height="464" alt="Screenshot 2026-10-10 221706" src="https://github.com/user-attachments/assets/329c4bf5-f31e-467a-b0c2-17550f2c2e5a" />
-)
+![After main.php] <img width="897" height="560" alt="image" src="https://github.com/user-attachments/assets/687066ea-974f-4a20-b2e7-b1e0dcb3d516" />
+
 
 ### Output PHP
 
-![Output PHP](<img width="779" height="210" alt="Screenshot 2026-10-10 222208" src="https://github.com/user-attachments/assets/e405185a-764c-4c2d-8f5d-a88945988d6f" />
-)
+![Output PHP] <img width="854" height="221" alt="image" src="https://github.com/user-attachments/assets/38870957-5b30-4c44-8c25-f707ceeaa0e5" />
 
 ---
 

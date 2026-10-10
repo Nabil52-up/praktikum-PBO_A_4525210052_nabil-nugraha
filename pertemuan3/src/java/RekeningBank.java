@@ -11,15 +11,16 @@ public class RekeningBank {
     // TODO 1: ganti tiga angka ajaib berikut menjadi konstanta bernama
     //         (public static final). Setelah itu, tidak boleh ada lagi
     //         angka literal di dalam badan method.
-    public static final double bunga_tahunan          = 0.025;
-    public static final double biaya_administrasi     = 5000;
+    public static final double bunga_tahunan = 0.025;
+    public static final double administrasi = 5000;
     public static final double batas_penarikan_sekali = 5000000;
+
+    private static int jumlahRekening = 0 ;
 
 
     // TODO 2: deklarasikan field statis penghitung jumlah rekening.
     //         Perhatikan: static, privat, dan bernilai awal 0.
 
-    private static int jumlahRekening = 0;
 
     private final String nomor;
     private final String pemilik;
@@ -32,20 +33,19 @@ public class RekeningBank {
      */
     public RekeningBank(String nomor, String pemilik) {
         // TODO 3 — ganti baris di bawah dengan delegasi
-        this(nomor,pemilik,0); 
+        this(nomor , pemilik,0 );
     }
 
     /** Constructor lengkap — SATU-SATUNYA tempat validasi berada. */
     public RekeningBank(String nomor, String pemilik, double saldoAwal) {
         // TODO 4: tolak nomor kosong dan saldo awal negatif.
-
         if (nomor == null || nomor.isEmpty()){
-            throw new IllegalArgumentException("Nomor tidak boleh kosong");
+            throw new IllegalArgumentException( "nomor rekening tidak boleh kosong " );
+        }
+         if (saldoAwal < 0 ){
+            throw new IllegalArgumentException( "saldo rekening tidak boleh kosong " );
         }
 
-        if (saldoAwal < 0){
-            throw new IllegalArgumentException("saldo awal tidak boleh negatif");
-        }
         this.nomor = nomor;
         this.pemilik = pemilik;
         this.saldo = saldoAwal;
@@ -53,41 +53,40 @@ public class RekeningBank {
         // TODO 5: naikkan penghitung jumlah rekening DI SINI SAJA.
         //         Pikirkan mengapa bukan di kedua constructor.
         jumlahRekening++;
+       
     }
 
     public void setor(double jumlah) {
         // TODO 6: tolak jumlah <= 0, lalu tambahkan ke saldo.
-    if (jumlah <= 0) {
-        throw new IllegalArgumentException("jumlah setoran harus positif");
-    }
-
-    saldo += jumlah;
+        if (jumlah <= 0){
+            throw new IllegalArgumentException("Jumlah setoran harus positif  ");
+        }
+        saldo +=jumlah;
     }
 
     public void tarik(double jumlah) {
         // TODO 7: tolak jumlah <= 0, tolak jika melebihi saldo,
         //         dan tolak jika melebihi batas penarikan sekali transaksi.
-        if (jumlah <= 0) {
-            throw new IllegalArgumentException("jumlah penarikan harus positif");
-
+        if (jumlah <= 0 ){
+            throw new IllegalArgumentException("jumlah penarikan harus positif ");
         }
-        if (jumlah > saldo) {
-            throw new IllegalArgumentException("saldo tidak mencukupi");
+        if (jumlah > saldo ){
+            throw new IllegalArgumentException("Saldo tidak mencukupi");
         }
-        if (jumlah > batas_penarikan_sekali){
-            throw new IllegalArgumentException("melebihi batas penmarikan sekali transaksi");
+        if (jumlah >  batas_penarikan_sekali ){
+            throw new IllegalArgumentException("Melebihi batas penarikan sekali transaksi ");
         }
         saldo -= jumlah;
     }
 
     /** TODO 8: kurangi saldo sebesar biaya administrasi, tetapi jangan sampai negatif. */
     public void potongBiayaAdmin() {
-        saldo = Math.max(0, saldo - biaya_administrasi);
+        saldo = Math.max(0, saldo - administrasi);
     }
 
     /** TODO 9: method statis — kembalikan jumlah rekening yang pernah dibuat. */
     public static int getJumlahRekening() {
-        return jumlahRekening;
+        return jumlahRekening;   // ganti
     }
 
     /**
@@ -96,7 +95,7 @@ public class RekeningBank {
      *          Itulah alasan ia pantas menjadi static.
      */
     public static double bungaSetahun(double pokok) {
-        return pokok * bunga_tahunan;   // ganti
+        return pokok * bunga_tahunan ;   // ganti
     }
 
     public double getSaldo()  { return saldo; }
